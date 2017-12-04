@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Sugarfree</title>
+	        <meta charset="utf-8"/>
+	  
+	        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	        <link href='https://fonts.googleapis.com/css?family=Pacifico:300,400,700' rel='stylesheet' type='text/css'>
+	        <link rel="stylesheet" type="text/css" href="/css/createP.css">
+	        <link rel="icon" type="image/png" href="img/fav.png">
+	        <script type="text/javascript" src="Main.js"></script>
+	</head>
+
+	<body>
+	    <header class="container">
+		  	    <div class="row">
+		  	     	<div class="col-sm-4">
+		  	     		<h1 class="col-sm-4">Sugarfree</h1>
+		  	     	</div>
+		            	
+		            <div class="col-sm-8 text-right">
+		            	<nav>
+		               		<form action="fowardSignin" method="get">
+      							<input type="submit" id="navSignin" value="sign in"></input>
+      						</form>
+		                </nav>
+		            </div>
+		        </div>
+		</header>
+	
+  <section class="jumbotron">
+      <div class="container">
+          <div class="row row-centered">
+          		<div class="col-sm-4 col-centered">
+          			<h3>Health information</h3>
+          			<form id="createPForm" action="createprofil" method="post">
+						Weight<br>
+						<input type="text" id="createWeight" name="createWeight"> KG
+						<br><br>
+
+						Height<br>
+						<input type="text" id="createHeight" name="createHeight"> CM
+						<br><br>
+						
+						Diabetes Type<br>
+						<select name="createType">
+						    <option value="type1">Type 1</option>
+						    <option value="type2">Type 2</option>
+						    <option value="lada">LADA</option>
+						    <option value="mody">MODY</option>
+						    <option value="pregnancy">Pregnancy diabetes</option>
+						    <option value="other">Other</option>
+						</select><br><br>
+
+						Insulin Therapie<br>
+						<select name="createTherapie">
+						    <option value="pen">Pen</option>
+						    <option value="pumpe">Pumpe</option>
+						    <option value="noInsulin">Without Insulin</option>
+						 </select><br><br>
+
+						Tablets<br>
+						<select name="createTablets">
+						    <option value="yes">Yes</option>
+						    <option value="no">No</option>
+						 </select><br><br>
+
+						 Blood sugar<br>
+						<select name="createBlood">
+						    <option value="mg/dL">mg/dL</option>
+						    <option value="mmol/L">mmol/L</option>
+						 </select><br><br>
+						
+
+					 	KH<br>
+						<select name="createkh">
+						    <option value="g">g</option>
+						    <option value="BE">BE</option>
+						    <option value="KE">KE</option>
+						 </select><br><br>
+				
+					<input type="submit" id="submitButton" value="sign up"></input>
+					</form>	
+				</div>
+			</div>
+        </div>
+  </section>
+</body>
+</html>

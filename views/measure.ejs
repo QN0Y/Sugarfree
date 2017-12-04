@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugarfree</title>
+        <meta charset="utf-8"/>
+  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/css/measure.css">
+             <link rel="icon" type="image/png" href="img/fav.png">
+</head>
+
+<body>
+    <header class="container">
+	  	     <div class="row">
+	  	     	<div class="col-sm-4">
+	  	     		<h1 class="col-sm-4">Sugarfree</h1>
+	  	     	</div>
+	            	
+	            <div class="col-sm-8 text-right">
+	              	<nav>
+	            	<form action="fowardDashboard" method="get">
+      					<input type="submit" id="navDashboard" value="dashboard"></input>
+      				</form>
+	            	
+	            	<form action="fowardProfil" method="get">
+      					<input type="submit" id="navProfil" value="profil"></input>
+      				</form>
+	            	
+	            	<form action="meal" method="get">
+      					<input type="submit" id="navMeal" value="meal planer"></input>
+      				</form>
+	               	
+	               	<form action="signout" method="get">
+      					<input type="submit" id="navSignout" value="sign out"></input>
+      				</form>
+	                
+	                </nav>
+	            </div>
+	                
+	         </div>
+	 	</header>
+	
+	  <section class="jumbotron">
+	      	<div class="container">
+	          	<div class="row-centered">
+	          		<div class="col-sm-4 col-centered">
+	          			<h3>Blood Glucose Measure</h3>
+	          				<form action="measure" method="post">
+	          				Week<br>
+							<select name="measureWeek">
+							    <option value="Week 1">Week 1</option>
+							    <option value="Week 2">Week 2</option>
+							    <option value="Week 3">Week 3</option>
+							    <option value="Week 4">Week 4</option>
+							</select><br><br>
+
+							Day<br>
+							<select name="measureDay">
+							    <option value="monday">monday</option>
+							    <option value="tuesday">tuesday</option>
+							    <option value="wednesday">wednesday</option>
+							    <option value="thursday">thursday</option>
+							    <option value="friday">friday</option>
+							    <option value="saturday">saturday</option>
+							    <option value="sunday">sunday</option>
+							</select><br><br>
+
+							Blood Sugar Glucose<br>
+							<input type="text" id="measureBlood" name="measureBlood"> mg/dL
+							<br><br>
+
+							<input type="submit" id="submitButton" value="add"></input>
+							</form>
+							
+					</div>									
+				</div>
+	        </div>
+	  </section>
+  </body>
+</html>

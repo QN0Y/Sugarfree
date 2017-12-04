@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugarfree</title>
+        <meta charset="utf-8"/>
+  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/css/mealPlan.css">
+        <link rel="icon" type="image/png" href="img/fav.png">
+        <script type="text/javascript" src="meal.js"></script>
+</head>
+
+<body>
+    <header class="container">
+	  	     <div class="row">
+	  	     	<div class="col-sm-4">
+	  	     		<h1 class="col-sm-4">Sugarfree</h1>
+	  	     	</div>
+	            	
+	            <div class="col-sm-8 text-right">
+	            	<nav>
+	            	<form action="fowardDashboard" method="get">
+      					<input type="submit" id="navDashboard" value="dashboard"></input>
+      				</form>
+	            	
+	            	<form action="fowardProfil" method="get">
+      					<input type="submit" id="navProfil" value="profil"></input>
+      				</form>
+	            	
+	            	<form action="meal" method="get">
+      					<input type="submit" id="navMeal" value="meal planer"></input>
+      				</form>
+	               	
+	               	<form action="signout" method="get">
+      					<input type="submit" id="navSignout" value="sign out"></input>
+      				</form>
+	                
+	                </nav>
+	            </div>
+	                
+	         </div>
+	 	</header>
+	
+	  <section class="jumbotron">
+	      	<div class="container">
+	          	<div class="row-centered">
+	          		<div class="col-sm-8 col-centered">
+	          			<div class="logoContainer">
+	          			<img id="logoMealplaner" src="img/sandwich.png">
+	          			<h3>Meal Planner</h3>
+
+	          			<table class="table table-bordered">
+					    	<thead>
+					      		<tr>
+							        <th>Monday</th>
+							        <th>Tuesday</th>
+							        <th>Wednesday</th>
+							        <th>Thursday</th>
+							        <th>Friday</th>
+					      		</tr>
+					   		</thead>
+					    	<tbody>
+					      		<tr class="breakfastrow">
+							        <td id="mondayMealBreak">
+							        	<%= monb %>
+							        </td>
+							        <td id="tuesdayMealBreak">
+							        	<%= tueb %>
+					       			 </td>
+							        <td id="wednesdayMealBreak"> 	
+							       		<%= wedb %>
+									</td>
+							        <td id="thursdayMealBreak">
+							        	<%= thub %>
+							        </td>
+							        <td id="fridayMealBreak">
+							        	<%= frib %>
+							        </td>
+					      		</tr>
+
+					      		<tr class="lunchrow">
+							        <td id="mondayMealLunch">
+							        	<%= monl %>
+							        </td>
+							        <td id="tuesdayMealLunch">
+							        	<%= tuel %>
+							        </td>
+							        <td id="wednesdayMealLunch">
+							        	<%= wedl %>
+							        </td>
+							        <td id="thursdayMealLunch">
+							        	<%= thul %>
+							        </td>
+							        <td id="fridayMealLunch">
+							        	<%= fril %>
+							        </td>
+					      		</tr>
+					      		<tr class="dinnerrow">
+							        <td id="mondayMealDinner">
+							        	<%= mond %>
+							        </td>
+							        <td id="tuesdayMealDinner">
+							        	<%= tued %>
+							        </td>
+							        <td id="wednesdayMealDinner">
+							        	<%= wedd %>
+							        </td>
+							        <td id="thursdayMealDinner">
+							        	<%= thud %>
+							        </td>
+							        <td id="fridayMealDinner">
+							        	<%= frid %>
+							        </td>
+					      		</tr>
+					    	</tbody>
+					  	</table>
+	          			
+	         				<form id="mealForm" action="fowardDashboard" method="get">
+								<input type="submit" id="submitButton" value="back to dashboard"></input>
+							</form>
+					</div>
+					</div>									
+				</div>
+	        </div>
+	  </section>
+  </body>
+</html>	

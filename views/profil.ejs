@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sugarfree</title>
+        <meta charset="utf-8"/>
+  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/css/profil.css">
+        <link rel="icon" type="image/png" href="img/fav.png">
+        <script type="text/javascript" src="profil.js"></script>
+</head>
+
+<body>
+    <header class="container">
+	  	     <div class="row">
+	  	     	<div class="col-sm-4">
+	  	     		<h1 class="col-sm-4">Sugarfree</h1>
+	  	     	</div>
+	            	
+	            <div class="col-sm-8 text-right">
+	            	<nav>
+	            	<form action="fowardDashboard" method="get">
+      					<input type="submit" id="navDashboard" value="dashboard"></input>
+      				</form>
+	            	
+	            	<form action="fowardProfil" method="get">
+      					<input type="submit" id="navProfil" value="profil"></input>
+      				</form>
+	            	
+	            	<form action="meal" method="get">
+      					<input type="submit" id="navMeal" value="meal planer"></input>
+      				</form>
+	               	
+	               	<form action="signout" method="get">
+      					<input type="submit" id="navSignout" value="sign out"></input>
+      				</form>
+	                
+	                </nav>
+	            </div>
+	                
+	         </div>
+	 	</header>
+	
+  <section class="jumbotron">
+      <div class="container">
+         	<div class="row-centered">
+	          		<div class="col-sm-4 col-centered">
+          			<h3>Health information</h3>	
+						<form action="fowardEditProfil" method="get">
+						Weight (in kg)<br>
+						<p id="profilWeight"><%= weight %></p>
+
+						Height (in cm)<br>
+						<p id="profilHeight"><%= height %></p>
+			
+          				Diabetes Type<br>
+						<p id="profilType"><%= type %></p>
+
+						Insulin Therapie<br>
+						<p id="profilInsulin"><%= therapie %></p>
+
+						Tablets<br>
+						<p id="profilTablets"><%= tablets %></p>
+
+						Blood sugar<br>
+						<p id="profilBlood"><%= bloodsugar %></p>
+						
+					 	KH<br>
+					 	<p id="profilKH"><%= kh %></p>
+
+					 	<input type="submit" id="submitButtonEdit" value="edit"></input>
+						</form>
+					
+					</div>
+				</div>
+        	</div>
+  	</section>
+  
+
+
+</body>
+</html>

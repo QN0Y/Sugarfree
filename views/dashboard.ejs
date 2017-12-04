@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Sugarfree</title>
+	     <meta charset="utf-8"/>
+	  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	        <link href='https://fonts.googleapis.com/css?family=Pacifico:300,400,700' rel='stylesheet' type='text/css'>
+	        <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+	        <link rel="icon" type="image/png" href="img/fav.png">
+	        <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    		<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+
+    </head>
+
+	<body>
+	    <header class="container">
+	  	    <div class="row">
+	  	     	<div class="col-sm-4">
+	  	     		<h1 class="col-sm-4">Sugarfree</h1>
+	  	     	</div>
+
+	  	     	<div class="col-sm-8 text-right">
+	            	<nav>
+	            	<form action="fowardDashboard" method="get">
+      					<input type="submit" id="navDashboard" value="dashboard"></input>
+      				</form>
+	            	
+	            	<form action="fowardProfil" method="get">
+      					<input type="submit" id="navProfil" value="profil"></input>
+      				</form>
+	            	
+	            	<form action="meal" method="get">
+      					<input type="submit" id="navMeal" value="meal planer"></input>
+      				</form>
+	               	
+	               	<form action="signout" method="get">
+      					<input type="submit" id="navSignout" value="sign out"></input>
+      				</form>
+	                
+	                </nav>
+	            </div>
+	        </div>
+	 	</header>
+	
+	 <section class="jumbotron">
+	    <div class="container">
+	        <div class="row">
+	      		<div class="col-sm-12">
+	      			<center><h3>Hello, welcome to <span style="font-family:pacifico;font-size:45px">Sugarfree</span> !</h3></center>
+	      			<form id="showChartForm" action="update" method="post">
+	      				<select name="navWeek">
+							    <option value="Week 1">Week 1</option>
+							    <option value="Week 2">Week 2</option>
+							    <option value="Week 3">Week 3</option>
+							    <option value="Week 4">Week 4</option>
+						</select>
+	      				<input type="submit" id="navShow" value="show chart"></input>
+	      			</form>
+	      			<div class="ct-chart ct-perfect-fourth"></div>
+	      			<div class="table-responsive">          
+		  				<table class="table">
+		    				<thead>
+				      		<tr>
+				      			<th><%= week %></th>
+				        		<th>Monday</th>
+				        		<th>Tuesday</th>
+				        		<th>Wednesday</th>
+				        		<th>Thursday</th>
+				        		<th>Friday</th>
+				        		<th>Saturday</th>
+				        		<th>Sunday</th>
+				      		</tr>
+		    				</thead>
+		    			<tbody>
+		      				<tr>
+		        				<td>mg/dL</td>
+		        				<td id="monm"><%= monm %></td>
+		        				<td id="tuem"><%= tuem %></td>
+		        				<td id="wedm"><%= wedm %></td>
+		        				<td id="thum"><%= thum %></td>
+		        				<td id="frim"><%= frim %></td>
+		        				<td id="satm"><%= satm %></td>
+		        				<td id="sunm"><%= sunm %></td>
+		      				</tr>
+		    			</tbody>
+		 		 		</table>
+				</div>
+	      	</div>
+		</div>
+	</section>
+  
+  	<section class="container">
+		<div class="row" id="rowButton">
+          	<div class="col-sm-4" id="measureContainer">
+      			<br>
+      			<img id="logoMeasure" src="img/blood-drop.png"><br>
+      			<form action="fowardMeasure" method="get">
+      				<input type="submit" id="submitButtonBlood" value="Blood Sugar Glucose Measure"></input>
+      			</form>
+      	    </div>
+
+      	    <div class="col-sm-4" id="mealPlanerContainer">
+      			<br>
+      			<img id="logoMealplaner" src="img/sandwich.png"><br>
+      			<form action="meal" method="get">
+      				<input type="submit" id="submitButtonMeal" value="Create Meal Planer"></input>
+      			</form>
+      	    </div>
+
+      	    <div class="col-sm-4" id="userContainer">
+      			<br>
+      			<img id="logoUser" src="img/user.png"><br>
+      			<form action="fowardProfil" method="get">
+      				<input type="submit" id="submitButtonProfil" value="Your Profil"></input>
+      			</form>
+      	    </div>
+      	</div>
+		</section>
+
+		<script>
+		var mon = document.getElementById('monm').innerHTML;
+		var tue = document.getElementById('tuem').innerHTML;
+		var wed = document.getElementById('wedm').innerHTML;
+		var thu = document.getElementById('thum').innerHTML;
+		var fri = document.getElementById('frim').innerHTML;
+		var sat = document.getElementById('satm').innerHTML;
+		var sun = document.getElementById('sunm').innerHTML;
+
+		var data = {
+	
+		labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		
+		series: [
+			[mon,tue,wed,thu,fri,sat,sun]
+		]
+		};
+
+		var options = {
+			width: 1000,
+			height: 500
+		};
+
+		new Chartist.Line('.ct-chart', data, options);
+
+	</script>
+
+	</body>
+</html>
+

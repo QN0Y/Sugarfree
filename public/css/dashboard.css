@@ -1,0 +1,222 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Pacifico', sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#navDashboard {
+  background-color: white;
+}
+
+#navDashboard:hover {
+  background-color: white;
+  color:#f95959;
+}
+
+#navProfil {
+  background-color: white;
+}
+
+#navProfil:hover {
+  background-color: white;
+  color:#00A0F0;
+}
+
+#navMeal {
+  background-color: white;
+}
+
+#navMeal:hover {
+  background-color: white;
+  color:#fdd44b;
+}
+
+#navSignout {
+  background-color: white;
+}
+
+#navSignout:hover {
+  background-color: white;
+  color:#f95959;
+}
+
+.ct-chart {
+  margin-left: 80px;
+  margin-top: 40px;
+  margin-bottom: -300px; 
+}
+
+#showChartForm {
+  margin-top: 40px;
+  margin-left: 130px;
+}
+
+.table-responsive {
+  height: 200px;
+}
+
+.jumbotron {
+  display: block;
+  align-items: center;
+  background-color: #ffffff;
+  height: 500px;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 0px;
+  color: black;
+  font-size: 30px;
+}
+
+.jumbotron p {
+  font-size: 15px;
+}
+
+.jumbotron .container {
+  height: 500px;
+}
+
+section .row  img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+#rowButton {
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+
+#logoMeasure {
+  width: 70px;
+  height: 70px;
+  margin-left: 70px;
+}
+
+#logoMealplaner {
+  width: 70px;
+  height: 70px;
+  margin-left: 70px;
+}
+
+#logoUser {
+  width: 70px;
+  height: 70px;
+  margin-left: 70px;
+}
+
+/*
+button
+*/
+
+#navShow {
+  font-size: 16px;
+  background-color: #f95959;
+  color: #ffffff;
+  width: 220px;
+}
+
+#navShow:hover {
+   font-size: 16px;
+  background-color: #ff4242;
+}
+
+#submitButtonBlood {
+  font-size: 16px;
+  background-color: #f95959;
+  color: #ffffff;
+  width: 220px;
+}
+
+#submitButtonBlood:hover {
+  font-size: 16px;
+  background-color: #ff4242;
+}
+
+#submitButtonMeal {
+  font-size: 16px; 
+  background-color: #fdd44b;
+  color: #ffffff;
+}
+
+#submitButtonMeal:hover {
+  font-size: 16px;
+  background-color: #f8c61f;
+}
+
+#submitButtonProfil {
+  font-size: 16px;
+  background-color: #00A0F0;
+  color: #ffffff;
+}
+
+#submitButtonProfil:hover {
+  font-size: 16px;
+  background-color: #0068F0;
+}
+
+/*
+form
+*/
+input {
+border: 0px;
+height: 25px;
+width: 200px;
+border-radius: 5px;
+margin-top: 2px;
+}
+
+form{
+font-size: 18px;
+}
+
+input, select, textarea{
+    color: #000000;
+}
+
+a:link, a:visited { 
+    text-decoration: none;
+    color:#000000;
+    cursor: auto;
+}
+
+nav a:hover {
+  color:#f95959;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Sugarfree</title>
+	        <meta charset="utf-8"/>
+	  
+	        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	        <link href='https://fonts.googleapis.com/css?family=Pacifico:300,400,700' rel='stylesheet' type='text/css'>
+	        <link rel="stylesheet" type="text/css" href="/css/signup.css">
+	        <link rel="icon" type="image/png" href="img/fav.png">
+	        <script type="text/javascript" src="Main.js"></script>
+	        <script type="text/javascript" src="signup.js"></script>
+	</head>
+
+	<body>
+	    <header class="container">
+		  	    <div class="row">
+		  	     	<div class="col-sm-4">
+		  	     		<h1 class="col-sm-4">Sugarfree</h1>
+		  	     	</div>
+		            	
+		            <div class="col-sm-8 text-right">
+		            	<nav>
+		               		<form action="fowardSignin" method="get">
+      							<input type="submit" id="navSignin" value="sign in"></input>
+      						</form>
+		                </nav>
+		            </div>
+		        </div>
+		</header>
+	
+  <section class="jumbotron">
+      <div class="container">
+          <div class="row row-centered">
+          		<div class="col-sm-4 col-centered">
+          			<h3>Lets create your account !</h3>
+
+          			<form id="signupForm" action="signup" method="post">
+						First name<br>
+						<input type="text" id="signupFirstname" name="signupFirstname"><br><br>
+
+						Last name<br>
+						<input type="text" id="signupLastname" name="signupLastname"><br><br>
+
+						Email address<br>
+						<input type="text" id="signupEmail" name="signupEmail"><br><br>
+
+						Password<br>
+						<input type="password" id="signupPassword" name="signupPassword"><br><br>
+
+						Confirm password<br>
+						<input type="password" id="signupCopassword" name="signupCopassword"><br><br>
+
+						Birthday<br>
+						<input type="date" id="signupBirthday" name="signupBirthday"><br><br>
+
+						Gender<br>
+						<select id="signupGender" name="signupGender">
+						    <option value="male">Male</option>
+						    <option value="female">Female</option>
+						</select>
+						<br><br>
+						<input type="submit" id="submitButton" value="next"></input>
+						</form><br>
+						
+				</div>
+			</div>
+        </div>
+  </section>
+</body>
+</html>

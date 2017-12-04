@@ -1,0 +1,149 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Pacifico', sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-color: #f95959;
+  color: #ffffff;
+  height: 750px;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.jumbotron p {
+  font-size: 15px;
+}
+
+section .row  img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+/*
+button
+*/
+#submitButton {
+  background-color: white;
+  font-size: 16px;
+  color: #f95959;
+}
+
+#submitButton:hover {
+  background-color: #ff4242;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#navSignin {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+#navSignin:hover {
+  background-color: white;
+  color:#f95959;
+}
+
+/*
+form
+*/
+input {
+border: 0px;
+height: 25px;
+width: 200px;
+border-radius: 5px;
+margin-top: 2px;
+}
+
+form
+{
+  font-size: 15px;
+}
+
+input, select, textarea{
+    color: #000000;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+a:link, a:visited { 
+    text-decoration: none;
+    color:#000000;
+    cursor: auto;
+}
+
+nav a:hover {
+  color:#f95959;
+}
+
